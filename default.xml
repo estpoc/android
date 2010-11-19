@@ -184,6 +184,6 @@
   <project path="vendor/motorola/umts_sholes" name="edgard/android_vendor_motorola_umts_sholes" remote="github" revision="master"/>
   <project path="vendor/shadow" name="edgard/android_vendor_shadow" remote="github" revision="master" />
   <project path="packages/apps/Superuser" name="edgard/android_packages_apps_Superuser" remote="github" revision="master" />
-  <project path="external/busybox" name="cvpcs/android_external_busybox" remote="github" revision="master" />
-  <project path="external/libc-ext" name="cvpcs/android_external_libc-ext" remote="github" revision="master" />
+  <project path="external/busybox" name="cvpcs/android_external_busybox" remote="github" revision="froyo" />
+  <project path="external/libc-ext" name="cvpcs/android_external_libc-ext" remote="github" revision="froyo" />
 </manifest>
