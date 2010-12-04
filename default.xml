@@ -18,6 +18,8 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+  <project path="manifest" name="edgard/android" remote="smbr" revision="master" />
+
   <project path="bionic" name="platform/bionic" />
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
