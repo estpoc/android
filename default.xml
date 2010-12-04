@@ -4,12 +4,17 @@
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
 
-  <remote name="github" fetch="git://github.com/" />
+  <remote name="github"
+          fetch="git://github.com/" />
+
+  <remote name="smbr"
+          fetch="git://github.com/"
+          review="review.edcastro.tk" />
 
   <default revision="refs/tags/android-2.2.1_r1"
            remote="korg" />
 
-  <project path="build" name="edgard/android_build" remote="github" revision="master">
+  <project path="build" name="edgard/android_build" remote="smbr" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -20,7 +25,7 @@
   <project path="bootable/recovery" name="platform/bootable/recovery" />
 
   <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="edgard/android_dalvik" remote="github" revision="master" />
+  <project path="dalvik" name="edgard/android_dalvik" remote="smbr" revision="master" />
   <project path="development" name="platform/development" />
 
   <project path="device/common" name="device/common" />
@@ -109,10 +114,10 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
 
-  <project path="frameworks/base" name="edgard/android_frameworks_base" remote="github" revision="master" />
+  <project path="frameworks/base" name="edgard/android_frameworks_base" remote="smbr" revision="master" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/policies/base" name="edgard/android_frameworks_policies_base" remote="github" revision="master" />
+  <project path="frameworks/policies/base" name="edgard/android_frameworks_policies_base" remote="smbr" revision="master" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
@@ -174,16 +179,16 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="edgard/android_system_core" remote="github" revision="master" />
-  <project path="system/extras" name="edgard/android_system_extras" remote="github" revision="master" />
+  <project path="system/core" name="edgard/android_system_core" remote="smbr" revision="master" />
+  <project path="system/extras" name="edgard/android_system_extras" remote="smbr" revision="master" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
-  <project path="device/motorola/umts_sholes" name="edgard/android_device_motorola_umts_sholes" remote="github" revision="master"/>
-  <project path="vendor/motorola/umts_sholes" name="edgard/android_vendor_motorola_umts_sholes" remote="github" revision="master"/>
-  <project path="vendor/shadow" name="edgard/android_vendor_shadow" remote="github" revision="master" />
-  <project path="packages/apps/Superuser" name="edgard/android_packages_apps_Superuser" remote="github" revision="master" />
+  <project path="device/motorola/umts_sholes" name="edgard/android_device_motorola_umts_sholes" remote="smbr" revision="master"/>
+  <project path="vendor/motorola/umts_sholes" name="edgard/android_vendor_motorola_umts_sholes" remote="smbr" revision="master"/>
+  <project path="vendor/shadow" name="edgard/android_vendor_shadow" remote="smbr" revision="master" />
+  <project path="packages/apps/Superuser" name="edgard/android_packages_apps_Superuser" remote="smbr" revision="master" />
   <project path="external/busybox" name="cvpcs/android_external_busybox" remote="github" revision="froyo" />
   <project path="external/libc-ext" name="cvpcs/android_external_libc-ext" remote="github" revision="froyo" />
 </manifest>
